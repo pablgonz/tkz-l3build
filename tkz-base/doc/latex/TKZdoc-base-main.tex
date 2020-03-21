@@ -1,6 +1,6 @@
 %!TEX TS-program = lualatex
-%  encoding: utf8 
-%  documentation of tkz-base.sty  
+%  encoding: utf8
+%  documentation of tkz-base.sty
 % Copyright 2020  Alain Matthes
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -11,7 +11,7 @@
 % version 2005/12/01 or later.
 %
 % This work has the LPPL maintenance status “maintained”.
-% 
+%
 % The Current Maintainer of this work is Alain Matthes.
 % This work consists of the files:
 % TKZdoc-base-axes.tex
@@ -45,7 +45,7 @@
 \gdef\tkzversionofpack{3.06c}
 \gdef\tkzdateofpack{2020/03/18}
 \gdef\tkznameofdoc{doc-tkz-base}
-\gdef\tkzversionofdoc{3.06c} 
+\gdef\tkzversionofdoc{3.06c}
 \gdef\tkzdateofdoc{2020/03/18}
 \gdef\tkzauthorofpack{Alain Matthes}
 \gdef\tkzadressofauthor{}
@@ -53,9 +53,9 @@
 \gdef\tkzurlauthor{}
 \gdef\tkzengine{lualatex}
 \gdef\tkzurlauthorcom{http://altermundus.fr}
-% -- Packages ---------------------------------------------------          
+% -- Packages ---------------------------------------------------
 \usepackage{calc}
-\usepackage{tkz-euclide} 
+\usepackage{tkz-euclide}
 \usepackage[colorlinks]{hyperref}
 \hypersetup{
       linkcolor=Gray,
@@ -101,25 +101,25 @@
 \usepackage[normalem]{ulem}
 \usepackage{microtype}
 \usepackage{array,multirow,multido,booktabs}
-\usepackage{shortvrb,fancyvrb} 
+\usepackage{shortvrb,fancyvrb}
 \renewcommand{\labelitemi}{--}
 \AtBeginDocument{\MakeShortVerb{\|}} % link to shortvrb
-\pdfcompresslevel=9 
+\pdfcompresslevel=9
 \setlength\parindent{0pt}
-\RequirePackage{makeidx} 
+\RequirePackage{imakeidx}
 %\@twocolumnfalse
-\makeindex 
+\makeindex
 % \def\tkzref{\arabic{section}-\arabic{subsection}-\arabic{subsubsection}}
 % \renewenvironment{tkzexample}[1][]{%
 %  \tkz@killienc \VerbatimOut{tkzbase-\tkzref.tex}%
 %   }{%
 % \endVerbatimOut
 % }
-%<---------------------------------------------------------------------------> 
+%<--------------------------------------------------------------------------->
 \begin{document}
 
 \parindent=0pt
-\author{\tkzauthorofpack}  
+\author{\tkzauthorofpack}
 \title{\tkznameofpack}
 \date{\today}
 \clearpage
@@ -132,9 +132,9 @@
 \setlength\unitlength{1mm}
 \put(70,120){%
 \begin{tikzpicture}
- \node at (30pt,30pt){\fontsize{60}{60}\selectfont \zorna{c}};  
+ \node at (30pt,30pt){\fontsize{60}{60}\selectfont \zorna{c}};
  \node at (270pt,30pt){\fontsize{60}{60}\selectfont \zorna{d}};
- \node at (30pt,210pt){\fontsize{60}{60}\selectfont \zorna{a}};  
+ \node at (30pt,210pt){\fontsize{60}{60}\selectfont \zorna{a}};
  \node at (270pt,210pt){\fontsize{60}{60}\selectfont \zorna{b}};
  \draw[line width=2pt,double,color=MidnightBlue,
  fill=myblue!10,opacity=.5] (0,0) rectangle (300pt,240pt);
@@ -142,48 +142,48 @@
   \begin{center}
 	  \color{MidnightBlue}
       \fontsize{24}{48}
-	  \selectfont tkz-euclide\\ 
+	  \selectfont tkz-euclide\\
                 tool for \\
-                Euclidean Geometry 
+                Euclidean Geometry
  \end{center}};
-\end{tikzpicture}}    
-} 
+\end{tikzpicture}}
+}
 \else
 \fi
 \makeatother
 \clearpage
-\tkzSetUpColors[background=white,text=darkgray]  
+\tkzSetUpColors[background=white,text=darkgray]
 
 \let\rmfamily\ttfamily
-\nameoffile{\tkznameofpack} 
+\nameoffile{\tkznameofpack}
 \defoffile{\tkzname{\tkznameofpack} is a package based on \TIKZ\ to make graphics as simple as possible. It is the basis on which a series of packages will be built, having as a common point, the creation of drawings useful in the teaching of mathematics. The main function of Basic is to provide an orthogonal coordinate system, and to let the user choose the graphical units.  This package requires version 3 or higher of \TIKZ.}
 
 \presentation
 
-\vspace*{1cm} 
+\vspace*{1cm}
 \noindent\space I'd like to thank \textbf{Till~Tantau} for creating the wonderful tool \href{http://sourceforge.net/projects/pgf/}{\TIKZ}.
 
-\vspace*{12pt} 
+\vspace*{12pt}
 \noindent\space I thank \textbf{Yves~Combe} for sharing his work on the protractor and the compass constructions. I would also like to thank, \tkzimp{David~Arnold} who corrected a lot of errors and tested many examples, \tkzimp{Wolfgang~Büchel} who also corrected errors and built great scripts to get the example files,  \tkzimp{John~Kitzmiller} and \tkzimp{Dimitri~Kapetas} for their examples, \tkzimp{Gaétan~Marris} for his remarks and corrections, and finally \tkzimp{Laurent Van Deik} for all his corrections, remarks and questions.
 
 \vspace*{12pt}
-\noindent\space You will find many examples on my site: 
+\noindent\space You will find many examples on my site:
 \href{http://altermundus.fr}{altermundus.fr}.
 
 \vfill
 You can send your remarks, and reports on errors you find, to the following address: \href{mailto:al.ma@mac.com}{\textcolor{pdfurlcolor}{\tkzauthorofpack}}.
- 
-This file can be redistributed and/or modified under the terms of the \LATEX\ 
+
+This file can be redistributed and/or modified under the terms of the \LATEX\
 Project Public License Distributed from \href{http://www.ctan.org/}{CTAN}\  archives.
 
 
 \clearpage
 \tableofcontents
 
-\clearpage 
+\clearpage
 \newpage
 
-\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} 
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 %<------------- includes   -----------------------------------------------
 \include{TKZdoc-base-news}
 \include{TKZdoc-base-installation}
@@ -201,7 +201,7 @@ Project Public License Distributed from \href{http://www.ctan.org/}{CTAN}\  arch
 \include{TKZdoc-base-texte}
 \include{TKZdoc-base-faq}
 %<------------------------------------------------------------------------
-\clearpage\newpage 
+\clearpage\newpage
 \makeatletter
 
 \begin{multicols}{2}
