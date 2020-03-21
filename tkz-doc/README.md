@@ -17,7 +17,7 @@ conditions of the [LaTeX Project Public License](https://www.latex-project.org/l
 The package `tkz-doc` is present in `TeXLive` and `MiKTeX`, use the
 package manager to install.
 
-For manual instalation all files must be moved into the different directories in your
+For manual installation all files must be moved into the different directories in your
 installation `TDS` tree or in your `TEXMFHOME`:
 
 ```
