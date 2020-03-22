@@ -2,7 +2,7 @@
 
 More fun with l3build :)
 
-## How to use 
+## How to use
 
 Run:
 ```

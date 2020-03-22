@@ -39,7 +39,7 @@
                footinclude = false,
                twoside,
                headings    = small,
-               cadre]{tkz-doc}
+               ]{tkz-doc}
 \usepackage{etoc}
 \gdef\tkznameofpack{tkz-base}
 \gdef\tkzversionofpack{3.06c}
@@ -93,7 +93,7 @@
 \usepackage{unicode-math}
 \usepackage{fourier-otf}
 \makeatletter
-\newfontfamily\zorna{ORNA4___.TTF}%\if@tkzcadre \usepackage{zorna} \fi
+\if@tkzcadre \usepackage{zorna} \fi
 \makeatother
 \usepackage{datetime,multicol,lscape}
 \usepackage[english]{babel}

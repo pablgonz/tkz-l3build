@@ -1,4 +1,4 @@
-# tkz-base
+# tkz-base — Tools for drawing with a cartesian coordinate system
 
 Release 3.06c 2020/03/20
 
